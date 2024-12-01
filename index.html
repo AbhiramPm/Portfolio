@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,73 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abhiram P Mohan - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
-    <header>
+    <header class="hero">
         <div class="container">
-            <h1>Abhiram P Mohan</h1>
-            <p>Lead QA Analyst @ Inter Smart</p>
+            <h1 class="fade-in">Abhiram P Mohan</h1>
+            <p class="fade-in">Lead QA Analyst @ Inter Smart</p>
             <nav>
                 <ul>
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#education">Education</a></li>
+                    <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section id="about">
+    <section id="about" class="section">
         <div class="container">
             <h2>About Me</h2>
-            <p>I am an experienced QA professional with over three years of experience. I specialize in software quality assurance, automation, and performance testing, ensuring the highest standards of quality and performance.</p>
+            <p>I am an experienced QA professional with over three years of experience, specializing in software quality assurance, automation, and performance testing.</p>
         </div>
     </section>
 
-    <section id="skills">
+    <section id="skills" class="section">
         <div class="container">
             <h2>Skills</h2>
-            <ul>
-                <li>Software Quality Assurance</li>
-                <li>Automation Testing (Selenium, TestNG)</li>
-                <li>Security Testing (OWASP ZAP, Burp Suite)</li>
-                <li>Performance Testing (JMeter, LoadRunner)</li>
-                <li>Digital Marketing</li>
-                <li>WordPress Development</li>
-                <li>Graphic Design</li>
-            </ul>
+            <ul id="skills-list"></ul>
         </div>
     </section>
 
-    <section id="experience">
+    <section id="projects" class="section">
         <div class="container">
-            <h2>Experience</h2>
-            <div class="experience-item">
-                <h3>Lead QA Analyst</h3>
-                <p>Inter Smart (Feb 2024 - Present)</p>
-                <ul>
-                    <li>Leading QA teams to execute comprehensive test plans.</li>
-                    <li>Developing QA strategies to improve testing efficiency.</li>
-                    <li>Collaborating with cross-functional teams to align quality standards.</li>
-                </ul>
-            </div>
+            <h2>Projects</h2>
+            <div id="project-container"></div>
         </div>
     </section>
 
-    <section id="education">
+    <section id="contact" class="section">
         <div class="container">
-            <h2>Education</h2>
-            <p>B.Tech in Mechanical Engineering</p>
-        </div>
-    </section>
-
-    <section id="contact">
-        <div class="container">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:abhiram@example.com">abhiram@example.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/abhiram-p-mohan/" target="_blank">linkedin.com/in/abhiram-p-mohan</a></p>
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+                <label for="message">Message</label>
+                <textarea id="message" rows="5" required></textarea>
+                <button type="submit">Send</button>
+            </form>
         </div>
     </section>
 
@@ -81,5 +65,7 @@
             <p>© 2024 Abhiram P Mohan</p>
         </div>
     </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
